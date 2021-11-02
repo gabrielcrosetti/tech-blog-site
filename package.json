@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/gabrielcrosetti/tech-blog-site/issues"
   },
-  "homepage": "https://github.com/gabrielcrosetti/tech-blog-site#readme"
+  "homepage": "https://github.com/gabrielcrosetti/tech-blog-site#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.3.2",
+    "sequelize": "^6.9.0"
+  }
 }

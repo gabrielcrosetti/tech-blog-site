@@ -1,0 +1,20 @@
+<a class="add-new-btn" href="/dashboard/new"><button>Add New Post</button></a>
+
+{{#if posts.length}}
+<section class="blog-list">
+    <div>
+        <h2>Your Blogs</h2>
+    </div>
+    
+    <div>
+        <ul>
+            {{#each posts as |post|}}
+            <li>
+                {{> post-info post}}
+                <button><a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit Post</a></button>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</section>
+{{/if}}
